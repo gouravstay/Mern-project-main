@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Kooiee</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <main>
+      <form id="login">
+        <header>
+          <h2>Kooiee</h2>
+          <p>loging here username and password</p>
+        </header>
+
+        <div class="wrapper">
+          <i class="material-symbols-outlined"></i>
+          <input type="text" class="type" placeholder="Username" />
+        </div>
+        <div class="wrapper">
+          <i class="material-symbols-outlined"></i>
+          <input type="password" class="type" placeholder="Password" />
+        </div>
+        <div class="wrapper remember">
+          <input id="check" type="checkbox" />
+          <label for="check">Remember me!</label>
+        </div>
+        <button >Login in</button>
+        <p class="footer">Don't have an acccount <a href="#" onclick="switchMode()">Sign up</a></p>
+      </form>
+
+      <form id="signup">
+        <header>
+          <h2>Kooiee</h2>
+          <p>Signup here username and password</p>
+        </header>
+
+        <div class="wrapper">
+          <i class="material-symbols-outlined"></i>
+          <input type="text" class="type" placeholder="Username" />
+        </div>
+        <div class="wrapper">
+          <i class="material-symbols-outlined"></i>
+          <input type="email" class="type" placeholder="Email" />
+        </div>
+        <div class="wrapper">
+          <i class="material-symbols-outlined"></i>
+          <input type="phone" class="type" placeholder="Phone" />
+        </div>
+        <div class="wrapper">
+          <i class="material-symbols-outlined"></i>
+          <input type="password" class="type" placeholder="Password" />
+        </div>
+        <div class="wrapper remember">
+          <input id="check" type="checkbox" />
+          <label for="check">I agree to terms and</label>
+        </div>
+        <button>Sign up</button>
+        <p class="footer">
+          Don't have an acccount <a onclick="switchMode()" href="#"  onclick="switchMode()">Log in</a>
+        </p>
+      </form>
+    </main>
+   <script>
+    function switchMode(){
+    document.body.classList.toggle("active")
+}
+
+   </script>
+  </body>
+</html>

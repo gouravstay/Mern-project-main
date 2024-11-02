@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> CSS 3D Trasnfrom </title>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+        }
+        body {
+            width: 100%;
+            height: 100%;
+        }
+
+        .container {
+            padding: 5rem;
+    
+            background-color: rgba(255, 140, 0, 0.514);
+            /* display: flex; */
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            gap: 1rem;
+            cursor: pointer;
+        }
+        .items{
+            padding: 2rem;
+            width: 150px;
+            height: 150px;
+            background-color: rgb(155, 100, 187);
+            border: 3px solid black;
+            border-radius: 13px;
+        }
+
+        #rotateX:hover{
+            transform: rotateX(45deg);
+        }
+        #rotateY:hover{
+            transform: rotateY(-45deg);
+        }
+
+        #rotateZ:hover{
+            transform: rotateZ(45deg);
+        }
+        #translateX:hover{
+            transform: translateX(-100px);
+           
+        }
+        #translateY:hover{
+            transform: translateY(100px);
+        }
+        #translateZ:hover{
+            transform:perspective(300px) translateZ(100px);
+        }
+        #ScaleX:hover{
+          transform: scaleX(1.5);
+        }
+        #ScaleY:hover{
+          transform: scaleY(1.5);
+        }
+        #ScaleZ:hover{
+          transform: perspective(300px) scaleZ(4) rotateY(30deg);
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <div class="items" id="rotateX" >Rotate X</div>
+        <div class="items" id="rotateY" >Rotate Y</div>
+        <div class="items" id="rotateZ" >Rotate Z</div>
+        <div class="items" id="translateX" >traslate X</div>
+        <div class="items" id="translateY" >traslate Y</div>
+        <div class="items" id="translateZ" >traslate Z</div>
+        <div class="items" id="ScaleX" >Scale X</div>
+        <div class="items" id="ScaleY" >Scale Y</div>
+        <div class="items" id="ScaleZ" >Scale Z</div>
+
+    </div>
+
+</body>
+
+</html>

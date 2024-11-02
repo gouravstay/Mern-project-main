@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>From three</title>
+    </head>
+    <body>
+
+        <h2>Complex From </h2>
+
+        <form>
+
+            <fieldset>
+                <legend> Personal information</legend>
+
+                <label for="name">Name</label>
+                <input type="text" name="info" id="name" autofocus>
+                <br/>
+                <br/>
+
+                <label for="name">Phone</label>
+                <input type="text" name="info" id="name">
+                <br/>
+                <br/>
+
+                <label for="name"> DOB </label>
+                <input type="date" name="info" id="name">
+                <br/>
+                <br/>
+
+                <label for="name"> Gender </label>
+
+                <input type="radio" name="male" id="genderType">
+                <label for="male">Male</label>
+                
+
+                <input type="radio" name="female" id="genderType">
+                <label for="male">Female</label>
+                <br/>
+                <br/>
+
+                <label for> Country </label>
+                
+                <select name="identity" id="country">
+                    <option value="" disabled selected hidden>-- Choose your country --</option>
+                    <option value="country"> India </option>
+                    <option value="country"> Russia </option>
+                    <option value="country"> United State </option>
+                </select>
+
+            </fieldset>
+            <br>
+            <fieldset>
+
+                <legend> Address  </legend> 
+
+                    <label for="identity"> Street </label> 
+                    <input type="text" name="address" id="identity">
+                    <br/>
+                    <br/>
+    
+
+                    <label for="identity"> City</label>
+                    <input type="text" name="address" id="identity">
+                    <br/>
+                    <br/>
+    
+
+                    <label for="identity"> State </label>
+                    <input type="text" name="address" id="identity">
+                    <br/>
+                    <br/>
+    
+
+                    <label for="identity"> Zipcode </label>
+                    <input type="text" name="address" id="identity">
+
+               
+            </fieldset>
+   <br/>      
+            <fieldset>
+                <legend>Other Information</legend>
+
+                <label for="comment">Comment</label>    <br>
+                <textarea name="Comment" id="comment" cols="50"
+                    rows="5"></textarea>
+
+                <label for="chcek"> I agree to the terms of service </label>
+                <input type="checkbox" name="terms" id="chcek">
+
+            </fieldset>
+
+            <input type="submit" value="Submit">
+        </form>
+        
+        <!-- <form action="#" method="post">
+            <label for="country">Country:</label>
+            <select id="country" name="country" required>
+                <option value="" disabled selected hidden>Choose your country</option>
+                <option value="usa">United States</option>
+                <option value="canada">Canada</option>
+                <option value="uk">United Kingdom</option>
+                 Add more countries as needed -->
+            <!-- </select><br>
+    
+            <input type="submit" value="Submit">
+        </form> --> 
+
+    </body>
+</html>

@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Animation In CSS</title>
+    <style>
+        * {
+            /*universal selector*/
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        .container {
+            width: 100vw;
+            height: 100vh;
+            background-color: beige;
+            border: 3px solid black;
+
+        }
+
+        .box1 {
+            width: 380px;
+            height: 80px;
+            background-color: rgb(59, 57, 163);
+            border: 2px solid black;
+            margin: 10px;
+            padding: 10px;
+            border-radius: 6px;
+            position: absolute;
+            /* Add this line */
+
+            /*   animation-name: rightMovement;
+             animation-duration: 5s;
+              animation-iteration-count: infinite;
+              animation-delay: 1s; /* Add 's' to indicate seconds
+              animation-timing-function: linear;
+              animation-direction: alternate-reverse; */
+
+            /* @keyframes duration | easing-function | delay |
+              iteration-count | direction | fill-mode | play-state | name */
+            animation: 5s linear 1s infinite alternate none running rightMovement;
+        }
+
+        .box1 {
+            width: 380px;
+            height: 80px;
+            background-color: rgb(59, 57, 163);
+            border: 2px solid black;
+            margin: 10px;
+            padding: 10px;
+            border-radius: 6px;
+            position: relative;
+            /* Add this line */
+
+            /*   animation-name: rightMovement;
+             animation-duration: 5s;
+              animation-iteration-count: infinite;
+              animation-delay: 1s; /* Add 's' to indicate seconds
+              animation-timing-function: linear;
+              animation-direction: alternate-reverse; */
+
+            /* @keyframes duration | easing-function | delay |
+              iteration-count | direction | fill-mode | play-state | name */
+            animation: 5s linear 1s  infinite  alternate running rightMovement;
+            /* animation-fill-mode: both; backwrd, forward */
+           
+        }
+
+        @keyframes rightMovement {
+            from {
+                top: 0;
+                left: 0;
+            }
+
+            to {
+                top: 0;
+                left: 1300px;
+            }
+        }
+
+        #box2 {
+            width: 380px;
+            height: 80px;
+            background-color: rgb(59, 57, 163);
+            border: 2px solid black;
+            margin: 10px;
+            padding: 10px;
+            border-radius: 6px;
+            position: relative;
+            animation: 5s ease-in 1s infinite alternate none running leftMovement;
+        }
+
+        @keyframes leftMovement {
+            from {
+                top: 570px;
+                left: 1300px;
+            }
+
+            to {
+                top: 600px;
+                left: 0;
+            }
+        }
+
+        #circle {
+            width: 100px;
+            height: 100px;
+            background-color: rgb(59, 57, 163);
+            border: 2px solid black;
+            margin: 10px;
+            padding: 10px;
+            border-radius: 50px;
+            position: relative;
+            top: 40%;
+            left: 60%;
+            animation: 10s ease-in-out 0s infinite alternate-reverse none running circleMovement;
+        }
+
+        @keyframes circleMovement {
+            0% {
+                top: 10%;
+                left: 15%;
+            }
+
+            30% {
+               top: 15%;
+               left: 60%;
+            }
+
+            60% {
+                top: 70%;
+                left: 10%;
+            }
+
+            100% {
+                top: 75%;
+                left: 80%;
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <div id="circle"></div>
+        <div class="box1"></div>
+        <div id="box2"></div>
+    </div>
+</body>
+
+</html>

@@ -1,0 +1,142 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+body{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh;
+   color: wheat;
+   
+   background: url(Choco-Fudge-Pastry.jpg) no-repeat center center/cover;
+}
+main{
+    width: 430px;
+    height: 550px;
+    border: 1px solid white;
+    border-radius: 10px;
+    backdrop-filter: blur(20px);
+    background-color: rgba(0, 0, 0, 0.192);
+    display: grid;
+    place-items: center;
+    position: relative;
+    overflow: hidden;
+    
+}
+
+form{
+    position: absolute;
+    width: 80%;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    text-align: center;
+    transition: .3s;
+    
+ 
+
+}
+header{
+    margin-bottom: 24px;
+
+}
+header p{
+    margin-top: 5px;
+    font-size: 19px;
+}
+
+.wrapper{
+    display: flex;
+    border-radius: 4px;
+    overflow: hidden;
+}
+
+.wrapper.remember{
+    display: grid;
+    grid-template-columns: auto auto;
+    align-items: center;
+    justify-content: flex-start;
+    gap: 5px;
+}
+input{
+    width: 100%;
+    padding: 10px 0 ;
+    border:none;
+ 
+}
+
+button{
+    padding: 15px 0;
+    border: none;
+    border-radius: 4px;
+    background-color: #5a4034;
+   color: white;
+   font-weight: bold;
+   cursor: pointer;
+   position: relative;
+   border-radius: 4px;
+    
+}
+
+button::before{
+ position: absolute;
+ content: "";
+ inset: 0;
+ --border:2px;
+ border-radius: 4px;
+ border:var(--border) solid #5a4034;
+ transition: .2s;
+}
+button:hover::before{
+   inset: calc(var(--border)* -2);
+}
+
+.footer{
+    font-size: 15px;
+    margin-top: 15px;
+}
+a{
+    text-decoration: none;
+    font-weight: bold;
+    color: white;
+    font-size: 16px;
+}
+
+a::before{
+    position: absolute;
+    content: "";
+    bottom: -3px;
+    width: 20%;
+    height: 2px;
+    background-color: white;
+    transition: .2s;
+    transform: scaleX(0);
+}
+
+a:hover::before{
+    transform: scaleX(1);
+}
+
+
+
+
+#signup{
+    transform: translateY(600px);
+}
+
+body.active #login{
+    transform: translateY(-600px)
+}
+
+body.active #signup{
+    transform: translateY(0px)
+}
+
+body.active main{
+    transition: .3s; 
+    height: 600px;
+}

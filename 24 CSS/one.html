@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Media Player</title>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
+
+        * {
+            margin: 0;
+            padding: 0;
+        }
+
+        .container {
+            height: 100vh;
+            width: 100vw;
+            background-color: rgba(255, 228, 196, 0.623);
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        .card {
+            width: 400px;
+            height: 650px;
+            background-color: white;
+            border-radius: 35px;
+            padding: 20px;
+            box-sizing: border-box;
+        }
+
+        .Mplayer {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            margin-bottom: 20px;
+        }
+    
+        .item1 {
+            display: flex;
+            align-items: center;
+        }
+
+        .item1 img {
+            margin-right: 10px; /* Add margin between elements */
+        }
+
+        #Scast{
+            margin-top: 6px;
+          margin-left: 180px;
+        }
+
+        .item2 img {
+            width: 100%;
+            height: auto;
+            border-radius: 20px;
+            cursor: pointer;
+        }
+        .item2 img {
+            width: 100%;
+            height: auto;
+            border-radius: 20px;
+            cursor: pointer;
+        }
+
+        .item3 h3 {
+            margin-bottom: 5px;
+        }
+
+        .item3 p {
+            margin-top: 0;
+            opacity: 0.7;
+        }
+
+        .progress-bar-container {
+            width: 100%;
+            height: 10px;
+            background-color: #ccc;
+            border-radius: 5px;
+            margin: 10px 0;
+            position: relative;
+        }
+
+        .progress-bar {
+            height: 100%;
+            background-color: #007bff;
+            border-radius: 5px;
+            width: 0;
+            position: absolute;
+            top: 0;
+            left: 0;
+        }
+
+        .time-display {
+            display: flex;
+            justify-content: space-between;
+            font-size: 12px;
+            opacity: 0.7;
+        }
+
+        .item5 button {
+            background: none;
+            border: none;
+            cursor: pointer;
+            outline: none;
+           margin: 0 18px;
+           margin-top: 10px;
+        }
+    </style>
+</head>
+<body>
+<div class="container">
+    <div class="card">
+
+        <div class="item1">
+                <div class="Mplayer">
+                <img src="close.png" alt="Close" height="30px">
+                <p>Media player</p>
+                <img id="Scast" src="chromecast.png" alt="Chromecast" height="26px">
+            </div>
+        </div>
+
+        <div class="item2">
+            <img src="logo.png" alt="Logo">
+        </div>
+
+        <div class="item3">
+            <h3>See you again</h3>
+            <p>Wiz, Khalifa, Charlie Puth</p>
+        </div>
+
+        <div>
+            <div class="progress-bar-container">
+                <div class="progress-bar" id="progressBar"></div>
+            </div>
+
+            <div class="time-display">
+                <span id="currentTime">0:00</span>
+                <span id="totalDuration">0:00</span>
+            </div>
+        </div>
+
+        <div class="item5">
+            <button><img src="plus.png" alt="Plus" height="30px"></button>
+            <button><img src="previous.png" alt="Previous" height="30px"></button>
+            <button><img src="play.png" alt="Play" height="30px"></button>
+            <button><img src="next.png" alt="Next" height="30px"></button>
+            <button><img src="minus.png" alt="Minus" height="30px"></button>
+        </div>
+
+    </div>
+</div>
+<script>
+    // JavaScript code for controlling audio can be placed here
+    function playAudio(audioFile) {
+    var audioPlayer = document.getElementById('audioPlayer');
+    audioPlayer.src = audioFile;
+    audioPlayer.play();
+    
+    // Change song picture and title
+    $('#songPicture').attr('src', 'new-picture.jpg');
+    $('#songTitle').text('New Song Title');
+
+    // Update progress bar
+    audioPlayer.addEventListener('timeupdate', updateProgressBar);
+    audioPlayer.addEventListener('loadedmetadata', function() {
+        $('#totalDuration').text(formatTime(audioPlayer.duration));
+    });
+}
+</script>
+</body>
+</html>

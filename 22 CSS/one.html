@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Second Card</title>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400&display=swap');
+      * {
+        margin: 0;
+        padding: 0;
+      }
+
+      .container {
+        height: 100vh;
+        background-image: linear-gradient(120deg, #84fab0 0%, #8fd3f4 100%);
+        display: flex;
+        justify-content: center;
+        align-items: center;
+      }
+
+      .card {
+        width: 400px;
+        height: 570px;
+        background-color: white;
+        border-radius: 16px;
+
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+      }
+
+      .card img {
+        width: 400px;
+        border-top-left-radius: 16px;
+        border-top-right-radius: 16px;
+        margin-bottom: 15px;
+      }
+
+      .textBox {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 15px;
+        width: 75%;
+        text-align: center;
+        margin-bottom: 26px;
+        font-family: 'Poppins', sans-serif;
+      }
+
+      #amountBox {
+        width: 75%;
+        height: 12%;
+        margin: 2px 0;
+
+        background-color: #8fd2f498;
+        border-radius: 16px;
+
+        display: flex;
+        justify-content: space-between;
+
+        align-items: center;
+        padding-left: 10px;
+        padding-right: 14px;
+      }
+
+      .leftBox {
+        display: flex;
+        gap: 15px;
+        align-items: center;
+      }
+
+      .leftBox img {
+        margin-top: 23px;
+        width: 3rem;
+        height: 3rem;
+        border-radius: 10px;
+      }
+
+      .textBox {
+        margin-top: 23px;
+        display: flex;
+        flex-direction: column;
+        gap: 0px;
+      }
+
+      .textBox p {
+        margin: 0;
+        /* Remove default margin */
+      }
+
+      /* Media query for smaller screens */
+      /* @media (max-width: 300px) {
+        #amountBox {
+          width: 80%; /* Adjust as needed 
+          padding-left: 10px;
+          padding-right: 10px;
+        }
+      } */
+.rightBox a{
+    font-family: 'Poppins', sans-serif;
+}
+      #PaymentButton {
+        /* Parent class ki width se 80% leleo */
+        width: 80%;
+        height: 10%;
+        margin: 20px;
+        background-color: #3929e1;
+        color: white;
+        border-radius: 10px;
+        box-shadow: 0 10px 20px rgba(0, 0, 0, 0.19),
+          0 6px 6px rgba(0, 0, 0, 0.23);
+          font-family: 'Poppins', sans-serif;
+      }
+
+      .cancleBox a {
+        text-decoration: none;
+        color: rgba(0, 0, 0, 0.411);
+        font-weight: bold;
+        font-size: larger;
+        font-family: 'Poppins', sans-serif;
+      }
+    </style>
+  </head>
+
+  <body>
+    <div class="container">
+      <div class="card">
+        <img src="order summery.jpeg" alt="" />
+
+        <div class="textBox">
+          <h2>Order Sumary</h2>
+
+          <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit.
+          </p>
+        </div>
+
+        <div id="amountBox">
+          <div class="leftBox">
+            <div class="imgBox">
+              <img src="music.png" alt="" />
+            </div>
+
+            <div class="textBox">
+              <p>Amount</p>
+              <p>$99.9/year</p>
+            </div>
+          </div>
+
+          <div class="rightBox">
+            <a href=""> Change </a>
+          </div>
+        </div>
+
+        <button id="PaymentButton">Procced to Pay</button>
+
+        <div class="cancleBox">
+          <a href=""> Cancle Order </a>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>

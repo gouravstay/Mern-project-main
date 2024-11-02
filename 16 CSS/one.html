@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <style>
+         .container{
+            background-color: bisque;
+            border: 7px solid black;
+            margin: 2px;
+            padding: 2px;
+            /* display: flex; */
+           
+        }
+
+        .box{
+            height: 240px;
+            width: 240px;
+            border: 2px solid rgb(0, 0, 0);
+            margin: 2px;
+            padding: 2px;
+            
+        }
+
+        #item1{
+          background-color: rgb(255, 218, 7);
+         
+          /* align-self: center; */
+        }
+        #item2{
+          background-color: rgb(22, 105, 48);
+         
+        
+        }
+        #item3{
+          background-color: rgb(99, 26, 128);
+
+        }
+        #item4{
+          background-color: rgb(216, 113, 45);
+       
+        }
+        
+        @media(min-width:400px){
+            .container{
+                flex-direction: row;
+            }
+
+        }
+
+        @media(min-width:800px){
+            .container{
+                flex-direction: column;
+            }
+
+        }
+      
+        @media (min-width: 300px) and (max-width:700px){
+    #item1 {
+        background-color: rgb(2, 73, 24);
+    }
+   }
+        @media (min-width: 300px) and (max-width:700px){
+    #item2 {
+        background-color: rgb(245, 164, 15);
+    }
+   }
+        @media (min-width: 300px) and (max-width:700px){
+    #item3 {
+        background-color: rgb(54, 44, 182);
+    }
+   }
+        @media (min-width: 300px) and (max-width:700px){
+    #item4 {
+        background-color: rgb(128, 43, 139);
+    }
+   }
+               
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="box"  id="item1"> Box 1</div>
+        <div class="box"  id="item2"> Box 2</div>
+        <div class="box"  id="item3"> Box 3</div>
+        <div class="box"  id="item4"> Box 4</div>
+</div>
+</body>
+</html>

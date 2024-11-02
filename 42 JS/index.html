@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <div class="container">
+        <div class="box" style="display: flex;"> Hey as you see me box </div>
+      <!-- <div class="box"> Hey as you see me box </div> -->
+
+        <script>
+            let div = document.createElement("div")
+            div.innerHTML = " I have been inserted <b> by gaurav </b> "
+            document.querySelector(".box").prepend(div)
+        </script>
+
+        <!-- design mode on
+        
+        document.designMode = "on" -->
+
+        <!-- .append()
+             .prepend()
+             .after()
+             .before()
+             .replacewith()
+        -->
+
+    </div>
+</body>
+</html>

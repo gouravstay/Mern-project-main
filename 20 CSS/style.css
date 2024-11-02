@@ -1,0 +1,45 @@
+ *{
+    margin: 0;
+    padding: 0;
+ }
+ .box{
+    width: 400px;
+    height: 400px;
+    background-color: rgba(59, 95, 148, 0.644);
+    border: 2px solid rgb(5, 0, 0)k;
+    border-radius: 26px;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: auto;
+    /* Property || duration || fuctions || delay */
+    transition: all 4s linear  ; /* Add smoothy*/
+ }
+
+
+.container{
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+
+} 
+
+
+
+.box:hover{
+    /* transform: rotate(60deg);  */
+      /* transform: scale(2);   */
+       /* transform: scale(0.5); */
+      /* transform: rotate(-360deg)  */
+/* 
+    tilt karna hai toh using Skew..                  
+     transform: skew(-95deg); */
+      /* transform: skew(45deg);  */
+      
+     transform: translate(-700px, 400px);
+     /* transform: matrix(1, 2, 3, 4, 5, 6); */
+}

@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> Shadow In CSS </title>
+    <style>
+        /* root me insert karne ke badd har koi isse acces kar payee */
+        :root {
+            --primary-color: rgb(0, 255, 0);
+            --custom-width: 400px;
+        }
+
+        * {
+            margin: 0;
+            padding: 0;
+        }
+
+        .container {
+            background-color: beige;
+            height: 100vh;
+            border: 2px solid black;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+
+        }
+
+        .box {
+            text-align: center;
+            background-color: black;
+            color: aliceblue;
+            width: var(--custom-width);
+            height: 500px;
+            border: 2px solid var(--primary-color);
+            margin: 5px;
+            padding: 5px;
+
+            /* box-shadow: 10px 15px  rgb(107, 255, 8) normal shadow with 
+        x-offset & y-offset*/
+
+            /* box-shadow: 15px 25px 50px rgb(0, 255, 0); border effect add karna */
+
+            /* Sprade radius colour colur sprade karna */
+            box-shadow: 15px 25px 100px 20px rgb(0, 255, 0)
+                /* Inside shadow */
+                /* box-shadow: inset 15px 25px 0px rgb(0, 255, 0) */
+
+                /* Multiple of shadows */
+                /* box-shadow: 10px 15px red, 20px 28px rgb(0, 197, 66); */
+
+        }
+
+        #head1 {
+            /* text-shadow: 2px 1px 21px rgb(0, 255, 0); */
+            /* text-shadow: rgb(3, 255, 3) 2px 1px 18px; */
+            /* text-shadow: rgb(145, 255, 0) -12px -13px ; */
+            /* text-shadow: 2px 1px; */
+            text-shadow: 1px 1px 2px rgb(0, 250, 0), 0 0 1em blue, 0 0 0.2em blue;
+        }
+    </style>
+</head>
+
+<body>
+
+    <div class="container">
+
+        <div class="box">
+            <img src="img.jpg" alt="">
+            <h2 id="head1"> Lorem </h2>
+
+            <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Labore autem provident repellendus, rem magnam
+                ad nobis eum! Dicta quisquam magnam neque voluptatem cupiditate?</h2>
+        </div>
+    </div>
+
+</body>
+
+</html>
+
+
+

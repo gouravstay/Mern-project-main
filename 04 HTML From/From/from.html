@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title> Form Two </title>
+    </head>
+    <body>
+
+        <h2> Job Application </h2>
+        <form>
+
+            <label for>Name: </label> <br>
+            <input type="text" name id> <br><br>
+
+            <label for> Email: </label> <br>
+            <input type="text" name id> <br><br>
+
+            <label for> Phone: </label> <br>
+            <input type="text" name id> <br> <br>
+
+            <label for> Resume: </label> <br>
+            <input type="file" name id>
+
+            <br> <br>
+
+            <label for="count"> Exprience (in years): </label>
+            <input type="number" name="counter" id="count" min="0" max="7">
+            <br/>
+
+            <fieldset>
+
+                <legend> Skill </legend>
+
+                <input type="checkbox" name="skillset" id="skill">
+                <label for="skill"> HTML </label>
+
+                <input type="checkbox" name="skillset" id="skill">
+                <label for="skill"> CSS </label>
+
+                <input type="checkbox" name="skillset" id="skill">
+                <label for="skill"> JavaScript </label>
+
+            </fieldset>
+
+            <br/>
+
+            <label for="educationType">Higher education: </label> <br>
+            <select name="educationtype" id="educationType">
+                <option> High School </option>
+                <option> Associate Degree </option>
+                <option> Bachelor's Degree </option>
+                <option> Master's Degree </option>
+                <option>Phd</option>
+            </select>
+<br/>
+<br/>
+            <fieldset>
+                <legend> Availability </legend>
+              
+                <input type="radio" name="job type" id="Available">
+                <label for="Available"> Full-time </label>
+
+                <input type="radio" name="job type" id="Available">
+                <label for="Available"> Internship </label>
+
+                <input type="radio" name="job type" id="Available">
+                <label for="Available"> Remote </label>
+
+            </fieldset>
+ <br/>
+            <label for="say something">  Additional Comment:</label> <br>
+            <textarea name="say" id="say something" cols="50" rows="10"> </textarea>  
+
+            <input type="submit" value="Submit Application">
+        </form>
+    </body>
+</html>

@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> CSS Positions Property </title>
+
+    <style>
+        div{
+            border: 1px solid black;
+            
+        }
+        img{
+            margin: 10px;
+        }
+
+
+        .image3{
+            /* position: relative; 
+            top: 10px;
+            left: 0px; */
+         /* position: absolute; 
+         top: 110px;    */
+         /*  absolute: overlapping */
+       
+
+        }
+
+        .container{
+            position: relative;
+            background: beige;
+            height: 10000px;
+        }
+
+        .image4{
+            position: fixed;
+        }
+        .image2{
+            position: sticky;
+            top: 300px;
+        }
+.box{
+    height: 5000px;
+    background: rgba(93, 139, 24, 0.514);
+}
+    </style>
+</head>
+<body>
+
+
+    <div class="container">
+        <img src="panda 2.jpg" 
+        alt="Panda 1 " 
+        width="300px" 
+        height="300px"
+        class="image1"
+        />
+        
+        
+
+        <img 
+        src="panda 3.jpg" 
+        alt="Panda 1 " 
+        width="300px" 
+        height="300px"
+        class="image2"
+        />
+   
+
+        <img 
+        src="panda 1.jpg" 
+        alt="Panda 1 " 
+        width="300px" 
+        height="300px"
+        class="image3"
+        />
+    
+
+        <img src="panda 4..jpeg" 
+        alt="Panda 1 " 
+        width="300px" 
+        height="300px"
+        class="image4"
+        />
+
+    </div>
+    
+<div class="box">
+
+</div>
+
+</body>
+
+</html>

@@ -1,0 +1,191 @@
+ @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+   
+}
+
+/* .Container{
+    background-color: rgba(173, 139, 66, 0.479);
+    height: 100vh;
+} */
+
+body{
+    overflow: scroll;
+}
+
+.Container {
+    width: 100%;
+    height: 100%;
+    overflow-x: none;
+    background-image: linear-gradient(to top, #ffffff 0%, #f3f3f3 100%);
+}
+
+.navContainer {
+    width: 100vw;
+    /* background-color: rgba(34, 63, 160, 0.349); */
+   
+    /* background-color: #004068;
+    background-image: linear-gradient(265deg, #004068 0%, #1f7f72 100%); */
+    background-color: #001522;
+    background-image: linear-gradient(101deg, #001522 0%, #538d88 100%);
+    
+}
+
+#navList {
+    margin-left: 15px;
+    margin-right: 15px;
+    list-style: none;
+    font-size: 2.7rem;
+    display: flex;
+    justify-content: space-around;
+}
+
+#navlogo {
+    font-size: 2.8rem;
+    color: rgb(255, 255, 255);
+    font-family: 'Poppins', sans-serif;
+}
+
+a {
+    text-decoration: none;
+    color: white;
+    font-family: 'Poppins', sans-serif;
+}
+
+#navItems {
+    display: flex;
+    gap: 20px;
+}
+
+.nav{
+
+    padding-right: 2rem;
+}
+
+#navItems a:hover {
+    color: #333; /* Change text color */
+}
+
+.footerBox{
+    background-color: #001522;
+background-image: linear-gradient(101deg, #001522 0%, #538d88 100%);
+
+
+    text-align: center;
+    min-height: 30px;
+
+}
+
+.footerBox p{
+    color: azure;
+    font-size: 2rem;
+    height: 260px;
+
+}
+
+/* .ContentBox{
+    width: 50%;
+    margin: auto;
+    padding: 3rem;
+    /* border: 1px solid black; 
+    background-color: white;
+    display: flex;
+    flex-direction: column;
+    gap: 100px;
+    box-shadow: 0px 0px 40px black;
+} */
+ .ContentBox {
+    width: 80%;
+    max-width: 1500px; 
+    margin: auto;
+    padding: 3rem;
+    background-color: white;
+    display: flex;
+    flex-direction: column;
+    gap: 100px;
+    box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.74); /* Adjusted shadow */
+} 
+
+
+.item{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+.rightBox {
+    position: relative;/* Ensure the parent container is positioned */
+    overflow: hidden; 
+}
+.rightBox img{
+    height: 400px;
+    border-radius: 20px;
+}
+
+.rightBox:hover{
+ transition: all 0.6s linear 0s;
+ transform: scale(1.1);
+}
+
+.leftBox{
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.leftBox h2{
+    font-size: 2rem;
+}
+
+.IngreBox{
+    font-size: 1.3rem;
+}
+
+.recipeBox{
+    font-size: 1.1rem;
+}
+
+
+.rightBox .overlay {
+    /* Overlapping using absolute */
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    background-color: rgba(36, 34, 34, 0.74);
+    border-radius: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    opacity: 0; /* Initially hide the overlay */
+    transition: opacity 0.3s ease; /* Add transition effect for smoother appearance */
+}
+
+.rightBox:hover .overlay {
+    opacity: 1; /* Show the overlay when hovering over the parent element */
+}
+
+.rightBox .overlay span {
+    /* Style for the "Buy Now" span */
+    color: white;
+    font-size: 2rem;
+    font-weight: bold;
+    text-transform: uppercase;
+}
+
+.recipe-image {
+    position: relative;
+    width: 80%; /* Adjusted width */
+    max-width: 1500px; /* Adjusted max-width */
+    margin: 0 auto; /* Center the image horizontally */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Add slight black shadow */
+}
+
+.recipe-image img {
+    max-width: 100%;
+    height: auto;
+    display: block;
+}
