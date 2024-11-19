@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login & Sign Up</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <!-- Login Form (Visible initially) -->
+    <div id="login-card" class="card">
+        <h2>Login</h2>
+        <form id="login-form">
+            <input type="text" id="login-username" placeholder="Username" required><br>
+            <input type="password" id="login-password" placeholder="Password" required><br>
+            <button type="button" onclick="loginUser()">Login</button>
+            <p>Don't have an account? <a href="#" onclick="showSignUp()">Sign Up</a></p>
+        </form>
+    </div>
+
+    <!-- Sign Up Form (Hidden initially) -->
+    <div id="signup-card" class="card hidden">
+        <h2>Sign Up</h2>
+        <form id="signup-form">
+            <input type="text" id="signup-username" placeholder="Username" required><br>
+            <input type="email" id="signup-email" placeholder="Email" required><br>
+            <input type="password" id="signup-password" placeholder="Password" required><br>
+            <button type="button" onclick="registerUser()">Sign Up</button>
+            <p>Already have an account? <a href="#" onclick="showLogin()">Login</a></p>
+        </form>
+    </div>
+
+    <script src="script.js"></script>
+
+</body>
+</html>
